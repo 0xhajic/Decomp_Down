@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>IDA - windrvcfg.DMP.idb (windrvcfg.DMP) C:\Users\Administrator\Desktop\Analysis\2019_analysis\20190206_GrandCrab_Dump\windrvcfg.DMP.idb</title>
+</head>
+<body bgcolor="#aaffff">
+<span style="white-space: pre; font-family: Courier; color: blue; background: #aaffff">
+
+<span style="color:gray">char __cdecl My_InternetConnect(const CHAR *a1)
+</span><span style="color:navy">{
+  </span><span style="color:black">unsigned int v2</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+C8h] [ebp-24h]
+  </span><span style="color:black">unsigned int v3</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+CCh] [ebp-20h]
+  </span><span style="color:gray">void *v4</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+D0h] [ebp-1Ch]
+  </span><span style="color:black">unsigned int v5</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+D4h] [ebp-18h]
+  </span><span style="color:black">unsigned int v6</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+D8h] [ebp-14h]
+  </span><span style="color:black">unsigned int v7</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+DCh] [ebp-10h]
+  </span><span style="color:gray">void *v8</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+E0h] [ebp-Ch]
+  </span><span style="color:black">const char *v9</span><span style="color:navy">; </span><span style="color:black">// </span><span style="color:#8080ff">[esp+E4h] [ebp-8h]
+  </span><span style="color:gray">int v10</span><span style="color:navy">; </span><span style="color:gray">// </span><span style="color:#8080ff">[esp+E8h] [ebp-4h]
+
+  v4 </span><span style="color:navy">= </span>InternetOpenA<span style="color:navy">(</span>aMozilla50Macin<span style="color:navy">, </span><span style="color:#00aa00">1u</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);</span><span style="color:green">// Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:25.0) Gecko/20100
+
+  </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#8080ff">v4 </span><span style="color:navy">)
+  {
+    </span><span style="color:#8080ff">v8 </span><span style="color:navy">= </span>InternetOpenUrlA<span style="color:navy">(</span><span style="color:#8080ff">v4</span><span style="color:navy">, </span><span style="color:#8080ff">a1</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+    </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#8080ff">v8 </span><span style="color:navy">)
+    {
+      </span><span style="color:#8080ff">v9 </span><span style="color:navy">= </span>PathFindFileNameA<span style="color:navy">(</span><span style="color:#8080ff">a1</span><span style="color:navy">);
+      </span><span style="color:#00aa00">if </span><span style="color:navy">( </span><span style="color:#8080ff">v9 </span><span style="color:navy">)
+      {
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a1Exe_0<span style="color:navy">) )
+        {
+          </span><span style="color:#8080ff">v10 </span><span style="color:navy">= </span><span style="color:#00aa00">4</span><span style="color:navy">;
+          </span>HttpQueryInfoA<span style="color:navy">(</span><span style="color:#8080ff">v8</span><span style="color:navy">, </span><span style="color:#00aa00">0x20000005u</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v3</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v10</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+        </span><span style="background:navy"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a2Exe_0<span style="color:navy">) )
+        {
+          </span><span style="color:#8080ff">v10 </span><span style="color:navy">= </span><span style="color:#00aa00">4</span><span style="color:navy">;
+          </span>HttpQueryInfoA<span style="color:navy">(</span><span style="color:#8080ff">v8</span><span style="color:navy">, </span><span style="color:#00aa00">0x20000005u</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v7</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v10</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+        </span><span style="background:navy"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a3Exe_0<span style="color:navy">) )
+        {
+          </span><span style="color:#8080ff">v10 </span><span style="color:navy">= </span><span style="color:#00aa00">4</span><span style="color:navy">;
+          </span>HttpQueryInfoA<span style="color:navy">(</span><span style="color:#8080ff">v8</span><span style="color:navy">, </span><span style="color:#00aa00">0x20000005u</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v5</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v10</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+        </span><span style="background:navy"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a4Exe_0<span style="color:navy">) )
+        {
+          </span><span style="color:#8080ff">v10 </span><span style="color:navy">= </span><span style="color:#00aa00">4</span><span style="color:navy">;
+          </span>HttpQueryInfoA<span style="color:navy">(</span><span style="color:#8080ff">v8</span><span style="color:navy">, </span><span style="color:#00aa00">0x20000005u</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v2</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v10</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+        </span><span style="background:navy"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a5Exe_0<span style="color:navy">) )
+        {
+          </span><span style="color:#8080ff">v10 </span><span style="color:navy">= </span><span style="color:#00aa00">4</span><span style="color:navy">;
+          </span>HttpQueryInfoA<span style="color:navy">(</span><span style="color:#8080ff">v8</span><span style="color:navy">, </span><span style="color:#00aa00">0x20000005u</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v6</span><span style="color:navy">, &amp;</span><span style="color:#8080ff">v10</span><span style="color:navy">, </span><span style="color:#00aa00">0</span><span style="color:navy">);
+        </span><span style="background:navy"></span><span style="color:navy">}
+        </span>InternetCloseHandle<span style="color:navy">(</span><span style="color:#8080ff">v8</span><span style="color:navy">);
+        </span>InternetCloseHandle<span style="color:navy">(</span><span style="color:#8080ff">v4</span><span style="color:navy">);
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a1Exe_1<span style="color:navy">) &amp;&amp; </span><span style="color:#8080ff">v3 &gt; </span><span style="color:#00aa00">0x7530 &amp;&amp; </span>dword_405030 <span style="color:navy">!= </span><span style="color:#8080ff">v3 </span><span style="color:navy">)
+        {
+          </span>dword_405030 <span style="color:navy">= </span><span style="color:#8080ff">v3</span><span style="color:navy">;
+          </span><span style="color:#00aa00">return 1</span><span style="color:navy">;
+        </span><span style="background:#00aa00"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a2Exe_1<span style="color:navy">) &amp;&amp; </span><span style="color:#8080ff">v7 &gt; </span><span style="color:#00aa00">0x7530 &amp;&amp; </span>dword_405034 <span style="color:navy">!= </span><span style="color:#8080ff">v7 </span><span style="color:navy">)
+        {
+          </span>dword_405034 <span style="color:navy">= </span><span style="color:#8080ff">v7</span><span style="color:navy">;
+          </span><span style="color:#00aa00">return 1</span><span style="color:navy">;
+        </span><span style="background:#00aa00"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a3Exe_1<span style="color:navy">) &amp;&amp; </span><span style="color:#8080ff">v5 &gt; </span><span style="color:#00aa00">0x7530 &amp;&amp; </span>dword_405040 <span style="color:navy">!= </span><span style="color:#8080ff">v5 </span><span style="color:navy">)
+        {
+          </span>dword_405040 <span style="color:navy">= </span><span style="color:#8080ff">v5</span><span style="color:navy">;
+          </span><span style="color:#00aa00">return 1</span><span style="color:navy">;
+        </span><span style="background:#00aa00"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a4Exe_1<span style="color:navy">) &amp;&amp; </span><span style="color:#8080ff">v2 &gt; </span><span style="color:#00aa00">0x7530 &amp;&amp; </span>dword_405038 <span style="color:navy">!= </span><span style="color:#8080ff">v2 </span><span style="color:navy">)
+        {
+          </span>dword_405038 <span style="color:navy">= </span><span style="color:#8080ff">v2</span><span style="color:navy">;
+          </span><span style="color:#00aa00">return 1</span><span style="color:navy">;
+        </span><span style="background:#00aa00"></span><span style="color:navy">}
+        </span><span style="color:#00aa00">if </span><span style="color:navy">( !</span>strcmp<span style="color:navy">(</span><span style="color:#8080ff">v9</span><span style="color:navy">, </span>a5Exe_1<span style="color:navy">) &amp;&amp; </span><span style="color:#8080ff">v6 &gt; </span><span style="color:#00aa00">0x7530 &amp;&amp; </span>dword_40503C <span style="color:navy">!= </span><span style="color:#8080ff">v6 </span><span style="color:navy">)
+        {
+          </span>dword_40503C <span style="color:navy">= </span><span style="color:#8080ff">v6</span><span style="color:navy">;
+          </span><span style="color:#00aa00">return 1</span><span style="color:navy">;
+        </span><span style="background:#00aa00"></span><span style="color:navy">}
+      </span><span style="background:blue"></span><span style="color:navy">}
+    </span><span style="background:blue"></span><span style="color:navy">}
+    </span>InternetCloseHandle<span style="color:navy">(</span><span style="color:#8080ff">v8</span><span style="color:navy">);
+  </span><span style="background:navy"></span><span style="color:navy">}
+  </span>InternetCloseHandle<span style="color:navy">(</span><span style="color:#8080ff">v4</span><span style="color:navy">);
+  </span><span style="color:#00aa00">return 0</span><span style="color:navy">;
+</span><span style="background:#00aa00"></span><span style="color:navy">}
+</span></body></html>
